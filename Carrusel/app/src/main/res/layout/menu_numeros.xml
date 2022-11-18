@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/_bg__inicio_ek2_shape"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Numeros"
+
+        android:textColor="@color/black"
+        android:textSize="50sp"
+
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Numeros"
+
+        android:textColor="@color/white"
+        android:textSize="50sp"
+
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/muno"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignEnd="@+id/mtres"
+
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="266dp"
+        android:src="@drawable/uno" />
+
+    <ImageView
+        android:id="@+id/mdos"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignTop="@+id/muno"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="147dp"
+        android:src="@drawable/dos" />
+
+    <ImageView
+        android:id="@+id/mtres"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignTop="@+id/mdos"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/tres" />
+
+
+    <ImageView
+        android:id="@+id/mcuatro"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignEnd="@+id/mtres"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="266dp"
+        android:src="@drawable/cuatro" />
+
+
+
+
+    <ImageView
+        android:id="@+id/mcinco"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+        android:layout_alignTop="@+id/muno"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+
+        android:layout_marginEnd="147dp"
+        android:src="@drawable/cinco" />
+
+    <ImageView
+        android:id="@+id/mseis"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignTop="@+id/mdos"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/numseis" />
+
+    <ImageView
+        android:id="@+id/msiete"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignEnd="@+id/mtres"
+        android:layout_marginTop="565dp"
+        android:layout_marginEnd="266dp"
+        android:src="@drawable/siete" />
+
+    <ImageView
+        android:id="@+id/mocho"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+        android:layout_alignTop="@+id/muno"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="470dp"
+
+        android:layout_marginEnd="147dp"
+        android:src="@drawable/ocho" />
+
+    <ImageView
+        android:id="@+id/mnueve"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+
+
+        android:layout_alignTop="@+id/mdos"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/nueve" />
+</RelativeLayout>

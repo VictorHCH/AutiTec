@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Carrusel</string>
+    <string name="si">Davo rifa</string>
+    <string name="opc">Opciones</string>
+
+    <string name="fondo">fondo</string>
+    <string name="vocales">vocales</string>
+    <string name="a">a</string>
+    <string name="e">e</string>
+    <string name="i">i</string>
+    <string name="o">o</string>
+    <string name="u">u</string>
+    <string name="burro">Burro</string>
+    <string name="caballo">Caballo</string>
+    <string name="cabra">Cabra</string>
+    <string name="gallina">gallina</string>
+    <string name="gato">gato</string>
+    <string name="grillo">grillo</string>
+    <string name="oveja">oveja</string>
+    <string name="pato">pato</string>
+    <string name="mono">mono</string>
+    <string name="pavo">pavo</string>
+
+</resources>
