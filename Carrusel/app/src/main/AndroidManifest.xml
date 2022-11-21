@@ -88,7 +88,13 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar"
-            >
+            />
+        <activity
+        android:name=".Formas"
+        android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Design.NoActionBar">
+
 
         </activity>
         <activity

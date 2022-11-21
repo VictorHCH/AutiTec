@@ -42,6 +42,11 @@ class JuegosAdapter(private var gameList: List<ModelJuegos>):RecyclerView.Adapte
                     val intent: Intent = Intent(it.context, Animales::class.java)
                     it.context.startActivity(intent)
 
+                }
+                if (gameName.text=="Alfabeto") {
+                    val intent: Intent = Intent(it.context, Formas::class.java)
+                    it.context.startActivity(intent)
+
                 }else{Toast.makeText(it.context , gameName.text, Toast.LENGTH_SHORT).show()}
             }
 
