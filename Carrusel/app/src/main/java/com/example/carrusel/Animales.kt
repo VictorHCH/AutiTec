@@ -18,7 +18,7 @@ class Animales : AppCompatActivity() {
         val decircabra = findViewById<ImageButton>(R.id.cabra)
         val decirgallina = findViewById<ImageButton>(R.id.gallina)
         val decirgato = findViewById<ImageButton>(R.id.gato)
-        val decirmono = findViewById<ImageButton>(R.id.monito)
+        val decirmono = findViewById<ImageButton>(R.id.mono)
         val decirpato = findViewById<ImageButton>(R.id.patito)
         val decirpavo = findViewById<ImageButton>(R.id.pavito)
 
