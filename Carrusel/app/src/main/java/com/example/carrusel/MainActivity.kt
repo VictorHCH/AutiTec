@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         gameList.add(ModelJuegos(R.drawable.vocale, "Vocales"))
         gameList.add(ModelJuegos(R.drawable.alfa, "Alfabeto"))
         gameList.add(ModelJuegos(R.drawable.leon, "Animales"))
+        gameList.add(ModelJuegos(R.drawable.formas, "Formas"))
 
         val adapter= JuegosAdapter(gameList)
 
