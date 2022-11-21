@@ -44,7 +44,7 @@ class JuegosAdapter(private var gameList: List<ModelJuegos>):RecyclerView.Adapte
 
                 }
                 if (gameName.text=="Alfabeto") {
-                    val intent: Intent = Intent(it.context, Formas::class.java)
+                    val intent: Intent = Intent(it.context, abecedario::class.java)
                     it.context.startActivity(intent)
 
                 }else{Toast.makeText(it.context , gameName.text, Toast.LENGTH_SHORT).show()}

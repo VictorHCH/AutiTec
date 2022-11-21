@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
 
     <Button
@@ -12,8 +14,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="A"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -21,8 +27,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="B"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -30,8 +40,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="C"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -39,17 +53,25 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="D"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="136dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/botonE"
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="E"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -57,8 +79,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="F"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -66,8 +92,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="G"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -75,8 +105,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="H"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -84,8 +118,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="I"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -93,17 +131,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="J"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="200dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botonK"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="K"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -111,8 +144,25 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="L"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonNN"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="Ñ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -120,8 +170,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="M"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -129,17 +183,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="N"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="264dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botonÑ"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="Ñ"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="264dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -147,35 +196,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="O"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="328dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botonP"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="P"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="328dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botonQ"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="Q"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="328dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botoR"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="R"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="328dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -183,8 +209,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="S"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="328dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -192,35 +222,12 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="T"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="392dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botonU"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="U"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="392dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botonV"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="V"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="392dp"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/botoW"
-        android:layout_width="59dp"
-        android:layout_height="54dp"
-        android:text="W"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="392dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -228,25 +235,128 @@
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="X"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="392dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/botoY"
+        android:id="@+id/botonW"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="W"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonV"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="V"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonY"
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="Y"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/botonZ"
         android:layout_width="59dp"
         android:layout_height="54dp"
         android:text="Z"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="456dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonU"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="U"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonR"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="R"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonQ"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="Q"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonP"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="P"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/botonK"
+        android:layout_width="59dp"
+        android:layout_height="54dp"
+        android:text="K"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
