@@ -7,104 +7,113 @@
     tools:context=".Animales">
 
     <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="1257dp"
-                android:layout_height="422dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:contentDescription="@string/fondo"
                 android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/fondo" />
 
             <ImageButton
                 android:id="@+id/burro"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="210dp"
-                android:layout_marginEnd="100dp"
+                android:layout_width="165dp"
+                android:layout_height="139dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/burro"
                 android:scaleType="fitCenter"
-                app:layout_constraintEnd_toEndOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.98"
                 app:srcCompat="@drawable/burro_1"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/caballo"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="240dp"
+                android:layout_width="159dp"
+                android:layout_height="176dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/caballo"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/burro"
-                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.168"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.976"
                 app:srcCompat="@drawable/caballo_1"
                 tools:ignore="ImageContrastCheck,ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/cabra"
-                android:layout_width="180dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="230dp"
+                android:layout_width="197dp"
+                android:layout_height="181dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/cabra"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.008"
-                app:layout_constraintStart_toEndOf="@+id/caballo"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.398"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.952"
                 app:srcCompat="@drawable/cabra_1"
                 tools:ignore="ImageContrastCheck" />
-
 
             <ImageButton
                 android:id="@+id/gallina"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="50dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/gallina"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.022"
-                app:layout_constraintStart_toEndOf="@+id/cabra"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.298"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.962"
                 app:srcCompat="@drawable/gallina_1"
                 tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck,ImageContrastCheck" />
 
-
             <ImageButton
                 android:id="@+id/gato"
-                android:layout_width="150dp"
-                android:layout_height="200dp"
-                android:layout_marginStart="-120dp"
-                android:layout_marginTop="250dp"
+                android:layout_width="117dp"
+                android:layout_height="143dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/gato"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/gallina"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.576"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.995"
                 app:srcCompat="@drawable/gato_1"
                 tools:ignore="ImageContrastCheck" />
 
@@ -112,15 +121,15 @@
                 android:id="@+id/mono"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="260dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/mono"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/gallina"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.711"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.884"
                 app:srcCompat="@drawable/mono"
                 tools:ignore="ImageContrastCheck" />
 
@@ -128,41 +137,39 @@
                 android:id="@+id/patito"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginStart="210dp"
-                android:layout_marginTop="70dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/pato"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/gallina"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.914"
                 app:srcCompat="@drawable/pato"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/pavito"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
-                android:layout_marginStart="200dp"
-                android:layout_marginTop="250dp"
+                android:layout_width="188dp"
+                android:layout_height="140dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/pavo"
                 android:scaleType="fitStart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/gallina"
-                app:layout_constraintTop_toTopOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.881"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.98"
                 app:srcCompat="@drawable/pavo"
                 tools:ignore="ImageContrastCheck" />
-
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </HorizontalScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
