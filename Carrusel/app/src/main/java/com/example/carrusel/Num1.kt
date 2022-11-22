@@ -5,12 +5,14 @@ import android.animation.AnimatorListenerAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.airbnb.lottie.LottieAnimationView
-
+import android.os.Handler
+import android.media.MediaPlayer
 import kotlinx.android.synthetic.main.num2.*
 
 
 class Num1 : AppCompatActivity() {
-
+    val DURACION: Long = 3000;
+    val CORTA: Long = 1000;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.num1)
@@ -19,7 +21,16 @@ class Num1 : AppCompatActivity() {
         var like = false
 
         likeImageView.setOnClickListener {
+            likeImageView.isEnabled=false
             like = likeAnimation(likeImageView, R.raw.pollo, like)
+            val mp = MediaPlayer.create(this, R.raw.gallina)
+            mp.start()
+            Handler().postDelayed(Runnable {
+                like = likeAnimation(likeImageView, R.raw.pollo, like)
+                Handler().postDelayed(Runnable {
+                    likeImageView.isEnabled=true
+                }, CORTA)
+            }, DURACION)
         }
 
 
