@@ -40,11 +40,10 @@
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-
-        android:layout_alignEnd="@+id/mtres"
-
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="266dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="17dp"
         android:src="@drawable/uno" />
 
     <ImageView
@@ -52,66 +51,56 @@
         android:layout_width="100dp"
         android:layout_height="150dp"
 
+       android:layout_centerInParent="true"
+        android:layout_alignTop="@id/muno"
 
-        android:layout_alignTop="@+id/muno"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="-5dp"
-        android:layout_marginEnd="147dp"
         android:src="@drawable/dos" />
+
 
     <ImageView
         android:id="@+id/mtres"
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-
-        android:layout_alignTop="@+id/mdos"
         android:layout_alignParentEnd="true"
         android:layout_gravity="center"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="17dp"
         android:src="@drawable/tres" />
-
 
     <ImageView
         android:id="@+id/mcuatro"
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-
-        android:layout_alignEnd="@+id/mtres"
-        android:layout_marginTop="315dp"
-        android:layout_marginEnd="266dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:layout_alignTop="@id/muno"
+        android:layout_marginLeft="17dp"
         android:src="@drawable/cuatro" />
-
-
-
 
     <ImageView
         android:id="@+id/mcinco"
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-        android:layout_alignTop="@+id/muno"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="220dp"
+        android:layout_centerInParent="true"
+        android:layout_alignTop="@id/mcuatro"
 
-        android:layout_marginEnd="147dp"
         android:src="@drawable/cinco" />
+
 
     <ImageView
         android:id="@+id/mseis"
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-
-        android:layout_alignTop="@+id/mdos"
         android:layout_alignParentEnd="true"
         android:layout_gravity="center"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="220dp"
+        android:layout_alignTop="@id/mtres"
+        android:layout_marginRight="17dp"
         android:src="@drawable/numseis" />
 
     <ImageView
@@ -119,10 +108,11 @@
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-
-        android:layout_alignEnd="@+id/mtres"
-        android:layout_marginTop="565dp"
-        android:layout_marginEnd="266dp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:layout_alignTop="@id/mcuatro"
+        android:layout_marginLeft="17dp"
         android:src="@drawable/siete" />
 
     <ImageView
@@ -130,24 +120,21 @@
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-        android:layout_alignTop="@+id/muno"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"
-        android:layout_marginTop="470dp"
+        android:layout_alignTop="@id/msiete"
 
-        android:layout_marginEnd="147dp"
+        android:layout_centerInParent="true"
         android:src="@drawable/ocho" />
+
 
     <ImageView
         android:id="@+id/mnueve"
         android:layout_width="100dp"
         android:layout_height="150dp"
 
-
-        android:layout_alignTop="@+id/mdos"
         android:layout_alignParentEnd="true"
         android:layout_gravity="center"
-        android:layout_marginTop="470dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="220dp"
+        android:layout_alignTop="@id/mseis"
+        android:layout_marginRight="17dp"
         android:src="@drawable/nueve" />
 </RelativeLayout>

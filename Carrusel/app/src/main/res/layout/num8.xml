@@ -25,7 +25,7 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/like2ImageView"
-            android:layout_width="187dp"
+            android:layout_width="167dp"
             android:layout_height="161dp"
             android:layout_marginLeft="220dp"
             android:layout_marginTop="-180dp"
@@ -43,7 +43,7 @@
             android:id="@+id/like4ImageView"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginLeft="250dp"
+            android:layout_marginLeft="220dp"
             android:layout_marginTop="-150dp"
             app:srcCompat="@drawable/burbuja" />
 
@@ -61,7 +61,7 @@
             android:layout_width="152dp"
             android:layout_height="152dp"
             android:layout_marginTop="-150dp"
-            android:layout_marginLeft="250dp"
+            android:layout_marginLeft="220dp"
             app:srcCompat="@drawable/burbuja"
             />
 
@@ -77,7 +77,7 @@
             android:id="@+id/like8ImageView"
             android:layout_width="152dp"
             android:layout_height="152dp"
-            android:layout_marginLeft="230dp"
+            android:layout_marginLeft="210dp"
             android:layout_marginTop="-130dp"
             app:srcCompat="@drawable/burbuja" />
     </LinearLayout>

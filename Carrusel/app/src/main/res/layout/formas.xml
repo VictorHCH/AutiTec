@@ -33,7 +33,7 @@
         android:id="@+id/lineablanca"
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="500dp"
         android:tag="figure2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

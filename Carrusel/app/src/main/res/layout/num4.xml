@@ -26,10 +26,10 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/like2ImageView"
-            android:layout_width="199dp"
+            android:layout_width="159dp"
             android:layout_height="141dp"
 
-            android:layout_marginLeft="200dp"
+            android:layout_marginLeft="190dp"
             app:srcCompat="@drawable/burbuja" />
 
         <com.airbnb.lottie.LottieAnimationView
