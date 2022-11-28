@@ -10,6 +10,31 @@
      android:background="@drawable/_bg__inicio_ek2_shape">
 
 
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="Abecedario"
+    android:gravity="center_horizontal"
+
+    android:textColor="@color/black"
+    android:layout_marginTop="20dp"
+    android:textSize="50sp"
+
+    android:textStyle="bold"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Abecedario"
+        android:gravity="center_horizontal"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="8dp"
+        ></TextView>
+
     <Button
         android:id="@+id/botonA"
         android:layout_width="59dp"
