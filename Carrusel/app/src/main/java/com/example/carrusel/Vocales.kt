@@ -1,11 +1,14 @@
 package com.example.carrusel
 
 
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ImageButton
+import kotlinx.android.synthetic.main.num1.*
+import kotlinx.android.synthetic.main.vocales.*
 
 
 class Vocales : AppCompatActivity() {
@@ -23,7 +26,11 @@ class Vocales : AppCompatActivity() {
         val DURACION: Long = 500;
         val CORTA: Long = 500;
 
+        backvoc.setOnClickListener(){
 
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
         decira.setOnClickListener{
             decira.isEnabled=false
 
