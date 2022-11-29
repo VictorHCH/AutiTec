@@ -38,7 +38,7 @@ class Num5 : AppCompatActivity() {
         likeImageView.setOnClickListener {
             likeImageView.isEnabled=false
             like = likeAnimation(likeImageView, R.raw.oruga, like)
-            val mp = MediaPlayer.create(this, R.raw.hola)
+            val mp = MediaPlayer.create(this, R.raw.sonido_1)
             mp.start()
             Handler().postDelayed(Runnable {
                 like = likeAnimation(likeImageView, R.raw.oruga, like)
@@ -53,7 +53,7 @@ class Num5 : AppCompatActivity() {
 
             like2ImageView.isEnabled=false
             like2 = likeAnimation(like2ImageView, R.raw.oruga, like2)
-            val mp = MediaPlayer.create(this, R.raw.hola)
+            val mp = MediaPlayer.create(this, R.raw.sonido_2)
             mp.start()
             Handler().postDelayed(Runnable {
                 like2 = likeAnimation(like2ImageView, R.raw.oruga, like2)
@@ -66,7 +66,7 @@ class Num5 : AppCompatActivity() {
         like3ImageView.setOnClickListener {
             like3ImageView.isEnabled=false
             like3 = likeAnimation(like3ImageView, R.raw.oruga, like3)
-            val mp = MediaPlayer.create(this, R.raw.hola)
+            val mp = MediaPlayer.create(this, R.raw.sonido_3)
             mp.start()
             Handler().postDelayed(Runnable {
                 like3 = likeAnimation(like3ImageView, R.raw.oruga, like3)
@@ -79,7 +79,7 @@ class Num5 : AppCompatActivity() {
         like4ImageView.setOnClickListener {
             like4ImageView.isEnabled=false
             like4 = likeAnimation(like4ImageView, R.raw.oruga, like4)
-            val mp = MediaPlayer.create(this, R.raw.hola)
+            val mp = MediaPlayer.create(this, R.raw.sonido_4)
             mp.start()
             Handler().postDelayed(Runnable {
                 like4 = likeAnimation(like4ImageView, R.raw.oruga, like4)
@@ -92,7 +92,7 @@ class Num5 : AppCompatActivity() {
         like5ImageView.setOnClickListener {
             like5ImageView.isEnabled=false
             like5 = likeAnimation(like5ImageView, R.raw.oruga, like5)
-            val mp = MediaPlayer.create(this, R.raw.hola)
+            val mp = MediaPlayer.create(this, R.raw.sonido_5)
             mp.start()
             Handler().postDelayed(Runnable {
                 like5 = likeAnimation(like5ImageView, R.raw.oruga, like5)

@@ -29,7 +29,7 @@ class Num1 : AppCompatActivity() {
         likeImageView.setOnClickListener {
             likeImageView.isEnabled=false
             like = likeAnimation(likeImageView, R.raw.pollo, like)
-            val mp = MediaPlayer.create(this, R.raw.pio)
+            val mp = MediaPlayer.create(this, R.raw.sonido_1)
             mp.start()
             Handler().postDelayed(Runnable {
                 like = likeAnimation(likeImageView, R.raw.pollo, like)

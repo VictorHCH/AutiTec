@@ -32,7 +32,7 @@ class Num3 : AppCompatActivity() {
         likeImageView.setOnClickListener {
             likeImageView.isEnabled=false
             like = likeAnimation(likeImageView, R.raw.tiger, like)
-            val mp = MediaPlayer.create(this, R.raw.tigrerugido)
+            val mp = MediaPlayer.create(this, R.raw.sonido_1)
             mp.start()
             Handler().postDelayed(Runnable {
                 like = likeAnimation(likeImageView, R.raw.tiger, like)
@@ -47,7 +47,7 @@ class Num3 : AppCompatActivity() {
 
             like2ImageView.isEnabled=false
             like2 = likeAnimation(like2ImageView, R.raw.tiger, like2)
-            val mp = MediaPlayer.create(this, R.raw.tigrerugido)
+            val mp = MediaPlayer.create(this, R.raw.sonido_2)
             mp.start()
             Handler().postDelayed(Runnable {
                 like2 = likeAnimation(like2ImageView, R.raw.tiger, like2)
@@ -60,7 +60,7 @@ class Num3 : AppCompatActivity() {
         like3ImageView.setOnClickListener {
             like3ImageView.isEnabled=false
             like3 = likeAnimation(like3ImageView, R.raw.tiger, like3)
-            val mp = MediaPlayer.create(this, R.raw.tigrerugido)
+            val mp = MediaPlayer.create(this, R.raw.sonido_3)
             mp.start()
             Handler().postDelayed(Runnable {
                 like3 = likeAnimation(like3ImageView, R.raw.tiger, like3)
