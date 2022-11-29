@@ -45,6 +45,7 @@ class carga : AppCompatActivity() {
         Handler().postDelayed(Runnable {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }, DURACION)
     }
 }

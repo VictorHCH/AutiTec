@@ -28,9 +28,12 @@ class JuegosAdapter(private var gameList: List<ModelJuegos>):RecyclerView.Adapte
 
 
             gameImage.setOnClickListener{
+
                 if (gameName.text=="Numeros") {
                     val intent: Intent = Intent(it.context, MenuNumros::class.java)
                     it.context.startActivity(intent)
+
+
 
                 }
                 if (gameName.text=="Vocales") {
@@ -41,7 +44,6 @@ class JuegosAdapter(private var gameList: List<ModelJuegos>):RecyclerView.Adapte
                 if (gameName.text=="Animales") {
                     val intent: Intent = Intent(it.context, Animales::class.java)
                     it.context.startActivity(intent)
-
                 }
                 if (gameName.text=="Alfabeto") {
                     val intent: Intent = Intent(it.context, abecedario::class.java)
@@ -53,13 +55,17 @@ class JuegosAdapter(private var gameList: List<ModelJuegos>):RecyclerView.Adapte
                     it.context.startActivity(intent)
 
                 }
-                else{Toast.makeText(it.context , gameName.text, Toast.LENGTH_SHORT).show()}
+                else{
+
+                    Toast.makeText(it.context , gameName.text, Toast.LENGTH_SHORT).show()}
+
             }
 
 
 
         }
     }
+
 
     override fun getItemCount(): Int = gameList.size
 }
