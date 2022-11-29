@@ -1,6 +1,7 @@
 package com.example.carrusel
 import android.content.ClipData
 import android.content.ClipDescription
+import android.content.Intent
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Point
@@ -10,13 +11,18 @@ import android.os.Bundle
 import android.view.DragEvent
 import android.view.View
 import android.widget.ImageView
+import kotlinx.android.synthetic.main.animales.*
 import kotlinx.android.synthetic.main.formas.*
 
 class Formas : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.formas)
+        backfor.setOnClickListener(){
 
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
         drag1ImageView.setOnLongClickListener(longClickListener)
         drag2ImageView.setOnLongClickListener(longClickListener)
         drag3ImageView.setOnLongClickListener(longClickListener)
@@ -103,5 +109,10 @@ class Formas : AppCompatActivity() {
                 false
             }
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,MainActivity::class.java))
+
     }
 }

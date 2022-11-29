@@ -1,11 +1,13 @@
 package com.example.carrusel
 
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.widget.ImageButton
-
+import kotlinx.android.synthetic.main.animales.*
+import kotlinx.android.synthetic.main.num1.*
 
 
 class Animales : AppCompatActivity() {
@@ -27,6 +29,11 @@ class Animales : AppCompatActivity() {
         val DURACION: Long = 3000;
         val CORTA: Long = 1000;
 
+        backanim.setOnClickListener(){
+
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
         decirmono.setOnClickListener{
 
             decirmono.isEnabled=false
@@ -138,5 +145,10 @@ class Animales : AppCompatActivity() {
             }, DURACION)
 
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,MainActivity::class.java))
+
     }
 }

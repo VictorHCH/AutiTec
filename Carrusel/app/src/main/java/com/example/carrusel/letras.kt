@@ -9,12 +9,19 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
 import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.abecedario.*
+import kotlinx.android.synthetic.main.letras.*
 
 class letras : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.letras)
+        backletra.setOnClickListener(){
+
+            val intent= Intent(this,abecedario::class.java)
+            startActivity(intent)
+        }
 
         //PONER FULL LA PANTALLA
         supportActionBar?.hide()
@@ -55,6 +62,11 @@ class letras : AppCompatActivity() {
                 R.drawable.error
             }
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,abecedario::class.java))
+
     }
 }
 

@@ -2,13 +2,16 @@ package com.example.carrusel
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.airbnb.lottie.LottieAnimationView
+import kotlinx.android.synthetic.main.num1.*
 
 import kotlinx.android.synthetic.main.num2.*
+import kotlinx.android.synthetic.main.num2.likeImageView
 
 
 class Num2 : AppCompatActivity() {
@@ -18,13 +21,18 @@ class Num2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.num2)
 
+        backnum2.setOnClickListener(){
 
+            val intent= Intent(this,MenuNumros::class.java)
+            startActivity(intent)
+        }
         var like = false
+
 
         likeImageView.setOnClickListener {
             likeImageView.isEnabled=false
             like = likeAnimation(likeImageView, R.raw.mapache, like)
-            val mp = MediaPlayer.create(this, R.raw.burbujas)
+            val mp = MediaPlayer.create(this, R.raw.sonido_1)
             mp.start()
             Handler().postDelayed(Runnable {
                 like = likeAnimation(likeImageView, R.raw.mapache, like)
@@ -39,7 +47,7 @@ class Num2 : AppCompatActivity() {
 
             like2ImageView.isEnabled=false
             like2 = likeAnimation(like2ImageView, R.raw.mapache, like2)
-            val mp = MediaPlayer.create(this, R.raw.burbujas)
+            val mp = MediaPlayer.create(this, R.raw.sonido_2)
             mp.start()
             Handler().postDelayed(Runnable {
                 like2 = likeAnimation(like2ImageView, R.raw.mapache, like2)
@@ -57,7 +65,11 @@ class Num2 : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,MenuNumros::class.java))
 
+    }
     private fun likeAnimation(imageView: LottieAnimationView,
                               animation: Int,
                               like: Boolean) : Boolean {

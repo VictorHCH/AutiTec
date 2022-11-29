@@ -2,6 +2,7 @@ package com.example.carrusel
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -26,12 +27,17 @@ class Num6 : AppCompatActivity() {
         setContentView(R.layout.num6)
 
 
+        backnum6.setOnClickListener(){
+
+            val intent= Intent(this,MenuNumros::class.java)
+            startActivity(intent)
+        }
         var like = false
 
         likeImageView.setOnClickListener {
             likeImageView.isEnabled=false
             like = likeAnimation(likeImageView, R.raw.pou, like)
-            val mp = MediaPlayer.create(this, R.raw.clicpou)
+            val mp = MediaPlayer.create(this, R.raw.sonido_1)
             mp.start()
             Handler().postDelayed(Runnable {
                 like = likeAnimation(likeImageView, R.raw.pou, like)
@@ -46,7 +52,7 @@ class Num6 : AppCompatActivity() {
 
             like2ImageView.isEnabled=false
             like2 = likeAnimation(like2ImageView, R.raw.pou, like2)
-            val mp = MediaPlayer.create(this, R.raw.clicpou)
+            val mp = MediaPlayer.create(this, R.raw.sonido_2)
             mp.start()
             Handler().postDelayed(Runnable {
                 like2 = likeAnimation(like2ImageView, R.raw.pou, like2)
@@ -59,7 +65,7 @@ class Num6 : AppCompatActivity() {
         like3ImageView.setOnClickListener {
             like3ImageView.isEnabled=false
             like3 = likeAnimation(like3ImageView, R.raw.pou, like3)
-            val mp = MediaPlayer.create(this, R.raw.clicpou)
+            val mp = MediaPlayer.create(this, R.raw.sonido_3)
             mp.start()
             Handler().postDelayed(Runnable {
                 like3 = likeAnimation(like3ImageView, R.raw.pou, like3)
@@ -72,7 +78,7 @@ class Num6 : AppCompatActivity() {
         like4ImageView.setOnClickListener {
             like4ImageView.isEnabled=false
             like4 = likeAnimation(like4ImageView, R.raw.pou, like4)
-            val mp = MediaPlayer.create(this, R.raw.clicpou)
+            val mp = MediaPlayer.create(this, R.raw.sonido_4)
             mp.start()
             Handler().postDelayed(Runnable {
                 like4 = likeAnimation(like4ImageView, R.raw.pou, like4)
@@ -85,7 +91,7 @@ class Num6 : AppCompatActivity() {
         like5ImageView.setOnClickListener {
             like5ImageView.isEnabled=false
             like5 = likeAnimation(like5ImageView, R.raw.pou, like5)
-            val mp = MediaPlayer.create(this, R.raw.clicpou)
+            val mp = MediaPlayer.create(this, R.raw.sonido_5)
             mp.start()
             Handler().postDelayed(Runnable {
                 like5 = likeAnimation(like5ImageView, R.raw.pou, like5)
@@ -98,7 +104,7 @@ class Num6 : AppCompatActivity() {
         like6ImageView.setOnClickListener {
             like6ImageView.isEnabled=false
             like6 = likeAnimation(like6ImageView, R.raw.pou, like6)
-            val mp = MediaPlayer.create(this, R.raw.clicpou)
+            val mp = MediaPlayer.create(this, R.raw.sonido_6)
             mp.start()
             Handler().postDelayed(Runnable {
                 like6 = likeAnimation(like6ImageView, R.raw.pou, like6)
@@ -114,7 +120,11 @@ class Num6 : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,MenuNumros::class.java))
 
+    }
     private fun likeAnimation(imageView: LottieAnimationView,
                               animation: Int,
                               like: Boolean) : Boolean {
