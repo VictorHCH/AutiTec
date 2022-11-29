@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.abecedario.*
+import kotlinx.android.synthetic.main.num1.*
 
 class abecedario: AppCompatActivity() {
     //botones
@@ -77,7 +78,11 @@ class abecedario: AppCompatActivity() {
         //PONER FULL LA PANTALLA
         //supportActionBar?.hide()
        // this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        backabc.setOnClickListener(){
 
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
         //Eventos de los botones
         botonA.setOnClickListener {
             cambiarActivity(1)
