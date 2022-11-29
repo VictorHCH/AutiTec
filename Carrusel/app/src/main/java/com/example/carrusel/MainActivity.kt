@@ -35,7 +35,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
 
-        System.exit(0);
+
+        finishAffinity()
 
     }
+
+
 }
