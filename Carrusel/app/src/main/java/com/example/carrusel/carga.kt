@@ -29,10 +29,6 @@ class carga : AppCompatActivity() {
 
         Glide.with(this).load(R.drawable.animation_500_laxjvc37).into(logoPuzzle)
 
-        val logoEleph = findViewById<ImageView>(R.id.img2)
-
-        Glide.with(this).load(R.drawable.animation_500_laxk02w8).into(logoEleph)
-
         val cargaBarra = findViewById<ImageView>(R.id.img2)
 
         Glide.with(this).load(R.drawable.animation_500_laxkc2m0).into(cargaBarra)
