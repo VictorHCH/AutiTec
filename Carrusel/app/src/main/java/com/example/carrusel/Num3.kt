@@ -2,6 +2,7 @@ package com.example.carrusel
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,7 +22,11 @@ class Num3 : AppCompatActivity() {
         setContentView(R.layout.num3)
         val DURACION: Long = 3000;
         val CORTA: Long = 1000;
+        backnum3.setOnClickListener(){
 
+            val intent= Intent(this,MenuNumros::class.java)
+            startActivity(intent)
+        }
         var like = false
 
         likeImageView.setOnClickListener {

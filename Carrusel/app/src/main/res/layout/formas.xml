@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Formas" android:background="@drawable/_bg__inicio_ek2_shape">
+    tools:context=".Formas"
+    android:background="@drawable/_bg__inicio_ek2_shape">
 
     <ImageView
         android:id="@+id/target1ImageView"

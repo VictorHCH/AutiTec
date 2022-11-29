@@ -15,7 +15,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/backnum3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
 
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/flecha_back" />
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/likeImageView"
             android:layout_width="match_parent"

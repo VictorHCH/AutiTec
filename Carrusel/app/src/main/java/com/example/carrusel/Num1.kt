@@ -2,12 +2,14 @@ package com.example.carrusel
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.airbnb.lottie.LottieAnimationView
 import android.os.Handler
 import android.media.MediaPlayer
-import kotlinx.android.synthetic.main.num2.*
+import kotlinx.android.synthetic.main.menu_numeros.*
+import kotlinx.android.synthetic.main.num1.*
 
 
 class Num1 : AppCompatActivity() {
@@ -17,7 +19,11 @@ class Num1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.num1)
 
+        backnum1.setOnClickListener(){
 
+            val intent= Intent(this,MenuNumros::class.java)
+            startActivity(intent)
+        }
         var like = false
 
         likeImageView.setOnClickListener {

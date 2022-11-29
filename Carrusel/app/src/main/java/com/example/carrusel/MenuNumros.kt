@@ -12,6 +12,11 @@ class MenuNumros : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_numeros)
 
+        back.setOnClickListener(){
+
+            val intent= Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
         muno.setOnClickListener(){
 
             val intent= Intent(this,Num1::class.java)
