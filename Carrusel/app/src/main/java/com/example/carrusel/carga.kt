@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 
 class carga : AppCompatActivity() {
 
-    val DURACION: Long = 3000;
+    val DURACION: Long = 3550;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +20,23 @@ class carga : AppCompatActivity() {
 
         //PONER FULL LA PANTALLA
         supportActionBar?.hide()
-        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        this.window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
 
-        val Logo = findViewById<ImageView>(R.id.img)
+        val logoPuzzle = findViewById<ImageView>(R.id.img)
 
-        Glide.with(this).load(R.drawable.xosx).into(Logo)
+        Glide.with(this).load(R.drawable.animation_500_laxjvc37).into(logoPuzzle)
+
+        val logoEleph = findViewById<ImageView>(R.id.img2)
+
+        Glide.with(this).load(R.drawable.animation_500_laxk02w8).into(logoEleph)
+
+        val cargaBarra = findViewById<ImageView>(R.id.img2)
+
+        Glide.with(this).load(R.drawable.animation_500_laxkc2m0).into(cargaBarra)
+
 
         cambiarActivity()
     }
