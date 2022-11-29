@@ -31,11 +31,7 @@ class Formas : AppCompatActivity() {
         target2ImageView.setOnDragListener(dragListener)
         target3ImageView.setOnDragListener(dragListener)
     }
-    override fun onBackPressed() {
-        super.onBackPressed()
-        startActivity(Intent(this,MainActivity::class.java))
 
-    }
     private class MyDragShadowBuilder(val v: View) : View.DragShadowBuilder(v) {
 
         override fun onProvideShadowMetrics(size: Point, touch: Point) {
@@ -113,5 +109,10 @@ class Formas : AppCompatActivity() {
                 false
             }
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,MainActivity::class.java))
+
     }
 }
