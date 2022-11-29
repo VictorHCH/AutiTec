@@ -90,7 +90,11 @@ class Num4 : AppCompatActivity() {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,MenuNumros::class.java))
 
+    }
     private fun likeAnimation(imageView: LottieAnimationView,
                               animation: Int,
                               like: Boolean) : Boolean {

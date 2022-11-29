@@ -22,6 +22,7 @@ class letras : AppCompatActivity() {
             val intent= Intent(this,abecedario::class.java)
             startActivity(intent)
         }
+
         //PONER FULL LA PANTALLA
         supportActionBar?.hide()
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -61,6 +62,11 @@ class letras : AppCompatActivity() {
                 R.drawable.error
             }
         }
+    }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        startActivity(Intent(this,abecedario::class.java))
+
     }
 }
 
