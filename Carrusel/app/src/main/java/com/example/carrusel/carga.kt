@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 
 class carga : AppCompatActivity() {
 
-    val DURACION: Long = 3550;
+    val DURACION: Long = 8000;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,12 +26,13 @@ class carga : AppCompatActivity() {
         )
 
         val logoPuzzle = findViewById<ImageView>(R.id.img)
-
         Glide.with(this).load(R.drawable.animation_500_laxjvc37).into(logoPuzzle)
 
         val cargaBarra = findViewById<ImageView>(R.id.img2)
+        Glide.with(this).load(R.drawable.animation_640_lb2drkha).into(cargaBarra)
 
-        Glide.with(this).load(R.drawable.animation_500_laxkc2m0).into(cargaBarra)
+        val eleph = findViewById<ImageView>(R.id.img3)
+        Glide.with(this).load(R.drawable.animation_500_laxk02w8).into(eleph)
 
 
         cambiarActivity()
